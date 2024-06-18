@@ -17,15 +17,15 @@ Chrome, e Android Studio (dispositivo utilizado foi o Pixel 2 usando a API 31, r
 
 controle_animais_hotel/ <br />
 ├── lib/ <br />
-│   ├── models/
-│   │   └── animal.dart
-│   ├── screens/
-│   │   ├── home_screen.dart
-│   │   └── animal_form_screen.dart
-│   └── widgets/
-│       └── animal_card.dart
-├── pubspec.yaml
-└── README.md
+│   ├── models/ <br />
+│   │   └── animal.dart <br />
+│   ├── screens/ <br />
+│   │   ├── home_screen.dart <br />
+│   │   └── animal_form_screen.dart <br />
+│   └── widgets/ <br />
+│       └── animal_card.dart <br />
+├── pubspec.yaml <br />
+└── README.md <br />
 
 models/animal.dart -> as classes, construtores e metodos.
 screens/home_screen.dart -> a tela inicial da aplicação, contendo os PET's cadastrados no hotel
