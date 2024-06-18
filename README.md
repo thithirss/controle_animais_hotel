@@ -1,8 +1,32 @@
-# controle_animais_hotel
+# HOTEL DE PET'S XAPPA
 
-A new Flutter project.
+Projeto desenvolvido em flutter. 
 
-## Getting Started
+## Sobre:
+
+O projeto foi feito com o intuito de concorrer uma vaga de dev, o proposito do projeto é que o mesmo consiga cadastrar o pet incluindo: Nome do Tutor (Dono do animal) 
+,Contato do Tutor, Espécie (Cachorro ou Gato), Raça, Data de entrada ,Diárias até o momento ,Previsão de data de saída (Se houver) ,Diárias totais previstas (se aplicável).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project is a starting point for a Flutter application.
 
