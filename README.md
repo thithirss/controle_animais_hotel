@@ -15,8 +15,8 @@ Chrome, e Android Studio (dispositivo utilizado foi o Pixel 2 usando a API 31, r
 
 ## Estrutura:
 
-controle_animais_hotel/
-├── lib/
+controle_animais_hotel/ <br />
+├── lib/ <br />
 │   ├── models/
 │   │   └── animal.dart
 │   ├── screens/
