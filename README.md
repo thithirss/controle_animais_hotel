@@ -37,7 +37,7 @@ widgets/animal_card.dart -> O widget que apresenta os forms apos o submit.
 
 Ao iniciar o main.dart, apos a depuração do flutter vamos nos deparar com a tela inicial:
 
-![Screenshot_1718746559](https://github.com/thithirss/controle_animais_hotel/assets/92064189/59c73816-2fa1-449e-ba64-a7490f4b3b49 =200x400)
+<img src="https://github.com/thithirss/controle_animais_hotel/assets/92064189/59c73816-2fa1-449e-ba64-a7490f4b3b49" alt="Descrição da Imagem" width="400">
 
 Ao clicar no simbolo de "+" no canto inferior esquerdo, podemos fazer o cadastro dos animais.
 
