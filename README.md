@@ -13,7 +13,7 @@ Para utilizar o projeto, siga os passos abaixo:
 
 - Clone o repositório:
 
-git clone https://github.com/thithirss/controle_animais_hotel.git
+git clone https://github.com/thithirss/controle_animais_hotel.git <br>
 cd controle_animais_hotel
 
 - Certifique-se de ter o Flutter instalado e configurado corretamente.
