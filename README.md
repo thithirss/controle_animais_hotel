@@ -33,6 +33,36 @@ screens/animal_form_creen.dart ->  O formulario de cadastro onde é inseridas as
 widgets/animal_card.dart -> O widget que apresenta os forms apos o submit.
 
 
+## Apresentação da aplicação:
+
+Ao iniciar o main.dart, apos a depuração do flutter vamos nos deparar com a tela inicial:
+
+![Screenshot_1718746559](https://github.com/thithirss/controle_animais_hotel/assets/92064189/59c73816-2fa1-449e-ba64-a7490f4b3b49)
+
+Ao clicar no simbolo de "+" no canto inferior esquerdo, podemos fazer o cadastro dos animais.
+
+![Screenshot_1718746639](https://github.com/thithirss/controle_animais_hotel/assets/92064189/6f9717d4-b6a0-4c6d-90cb-a99b5dc33cc0)
+
+onde será preenchido as informações para o cadastro do pet ao Hotel
+
+![Screenshot_1718746698](https://github.com/thithirss/controle_animais_hotel/assets/92064189/d0c2156b-ec0d-4dbe-ad15-cf1a660dcc51)
+
+Apos preenchido, podera ser salvo e sera apresentado na tela inicial
+
+![Screenshot_1718746736](https://github.com/thithirss/controle_animais_hotel/assets/92064189/47ae24ad-2f02-4f75-8099-d44709a7b365)
+
+Clicando em cima do cadastro é possivel ser feita a edição do mesmo, ou excluir o cadastro do pet.
+
+![Screenshot_1718746793](https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4c7c405-5969-49fa-80fe-3490891afcc3)
+
+
+
+
+
+
+
+
+
 
 
 
