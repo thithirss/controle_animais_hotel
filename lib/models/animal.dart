@@ -1,4 +1,5 @@
 class Animal {
+  final String id; // Adicione esta linha
   final String nomeTutor;
   final String contatoTutor;
   final String especie;
@@ -9,6 +10,7 @@ class Animal {
   final int diariasTotais;
 
   Animal({
+    required this.id,
     required this.nomeTutor,
     required this.contatoTutor,
     required this.especie,
@@ -18,4 +20,12 @@ class Animal {
     required this.previsaoSaida,
     required this.diariasTotais,
   });
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Animal && runtimeType == other.runtimeType && id == other.id;
+
+  @override
+  int get hashCode => id.hashCode;
 }

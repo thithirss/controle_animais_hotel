@@ -4,52 +4,87 @@ import 'package:controle_animais_hotel/screens/animal_form_screen.dart';
 import 'package:controle_animais_hotel/widgets/animal_card.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<Animal> _animais = []; // Lista de animais hospedados
+  final List<Animal> _animais = [];
 
-  // Método para adicionar um novo animal à lista
   void _adicionarAnimal(Animal animal) {
     setState(() {
       _animais.add(animal);
     });
   }
 
-  // Método para excluir um animal da lista
-  void _excluirAnimal(int index) {
+  void _editarAnimal(Animal animal) {
     setState(() {
-      _animais.removeAt(index);
+      int index = _animais.indexWhere((a) => a.id == animal.id);
+      if (index != -1) {
+        _animais[index] = animal;
+      }
     });
+  }
+
+  void _excluirAnimal(Animal animal) {
+    setState(() {
+      _animais.removeWhere((a) => a.id == animal.id);
+    });
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('${animal.nomeTutor} foi removido')),
+    );
+  }
+
+  void _navegarParaFormulario([Animal? animal]) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => AnimalFormScreen(
+          adicionarAnimal: _adicionarAnimal,
+          editarAnimal: _editarAnimal,
+          animal: animal,
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Controle de Animais'),
+        title: const Text('Animais Hospedados'),
       ),
       body: ListView.builder(
         itemCount: _animais.length,
         itemBuilder: (context, index) {
-          return AnimalCard(
-            animal: _animais[index],
-            onDelete: () => _excluirAnimal(index),
+          final animal = _animais[index];
+          return Dismissible(
+            key: Key(animal.id),
+            background: Container(
+              color: Colors.red,
+              alignment: Alignment.centerRight,
+              padding: const EdgeInsets.only(right: 20.0),
+              child: const Icon(
+                Icons.delete,
+                color: Colors.white,
+              ),
+            ),
+            onDismissed: (direction) {
+              _excluirAnimal(animal);
+            },
+            child: AnimalCard(
+              animal: animal,
+              onDelete: () => _excluirAnimal(animal),
+              onTap: () => _navegarParaFormulario(animal),
+            ),
           );
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AnimalFormScreen(adicionarAnimal: _adicionarAnimal),
-            ),
-          );
-        },
-        child: Icon(Icons.add),
+        onPressed: () => _navegarParaFormulario(),
+        child: const Icon(Icons.add),
       ),
     );
   }
