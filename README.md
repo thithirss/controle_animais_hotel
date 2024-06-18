@@ -45,15 +45,15 @@ Ao clicar no simbolo de "+" no canto inferior esquerdo, podemos fazer o cadastro
 
 onde será preenchido as informações para o cadastro do pet ao Hotel
 
-![Screenshot_1718746698](https://github.com/thithirss/controle_animais_hotel/assets/92064189/d0c2156b-ec0d-4dbe-ad15-cf1a660dcc51)
+<img src ="https://github.com/thithirss/controle_animais_hotel/assets/92064189/d0c2156b-ec0d-4dbe-ad15-cf1a660dcc51" width="300">
 
 Apos preenchido, podera ser salvo e sera apresentado na tela inicial
 
-![Screenshot_1718746736](https://github.com/thithirss/controle_animais_hotel/assets/92064189/47ae24ad-2f02-4f75-8099-d44709a7b365)
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/47ae24ad-2f02-4f75-8099-d44709a7b365" width = "300">
 
 Clicando em cima do cadastro é possivel ser feita a edição do mesmo, ou excluir o cadastro do pet.
 
-![Screenshot_1718746793](https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4c7c405-5969-49fa-80fe-3490891afcc3)
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4c7c405-5969-49fa-80fe-3490891afcc3" width = "300">
 
 
 
