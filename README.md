@@ -68,7 +68,12 @@ Apos preenchido, podera ser salvo e sera apresentado na tela inicial
 
 Clicando em cima do cadastro é possivel ser feita a edição do mesmo, ou excluir o cadastro do pet.
 
-<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4c7c405-5969-49fa-80fe-3490891afcc3" width = "300">
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4565e51-6ba1-4aaa-9073-32e87d545d07" width = "300">
+
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/72be6336-bb49-45b0-a917-9b7fbf2c1e0a" width = "300">
+
+
+
 
 
 
