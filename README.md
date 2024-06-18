@@ -47,9 +47,6 @@ Ao iniciar o main.dart, apos a depuração do flutter vamos nos deparar com a te
 
 
 
-<br>
-Ao clicar no simbolo de "+" no canto inferior esquerdo, podemos fazer o cadastro dos animais.
-<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/e51fbc3a-30d7-417c-8afc-8d37cbbed8dc" width = "300">
 
 
 onde será preenchido as informações para o cadastro do pet ao Hotel
