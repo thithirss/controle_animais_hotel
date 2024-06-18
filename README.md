@@ -9,9 +9,15 @@ O projeto foi feito com o intuito de concorrer uma vaga de dev, o proposito do p
 
 ## Instalação: 
 
-O mesmo deverera ser baixado, ou clonado via git bash, nome da pasta deve ser 'controle_animais_hotel', o mesmo realizado com flutter, usando a depuração para eventuais testes no Google
-Chrome, e Android Studio (dispositivo utilizado foi o Pixel 2 usando a API 31, release 'S' Android 12), versão do JDK 11. O mesmo nao exige nenhuma biblioteca em especial para seu funcionamento.
+Para utilizar o projeto, siga os passos abaixo:
 
+- Clone o repositório:
+
+git clone https://github.com/thithirss/controle_animais_hotel.git
+cd controle_animais_hotel
+
+- Certifique-se de ter o Flutter instalado e configurado corretamente.
+- Execute o projeto com `flutter run`.
 
 ## Estrutura:
 
@@ -54,37 +60,6 @@ Apos preenchido, podera ser salvo e sera apresentado na tela inicial
 Clicando em cima do cadastro é possivel ser feita a edição do mesmo, ou excluir o cadastro do pet.
 
 <img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4c7c405-5969-49fa-80fe-3490891afcc3" width = "300">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
