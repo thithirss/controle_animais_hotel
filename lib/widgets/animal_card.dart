@@ -4,13 +4,13 @@ import 'package:controle_animais_hotel/models/animal.dart';
 class AnimalCard extends StatelessWidget {
   final Animal animal;
   final VoidCallback onDelete;
-  final VoidCallback onTap; // Adicionando o callback onTap
+  final VoidCallback onTap; 
 
   const AnimalCard({
     Key? key,
     required this.animal,
     required this.onDelete,
-    required this.onTap, // Incluindo o parâmetro onTap
+    required this.onTap, 
   }) : super(key: key);
 
   @override
@@ -24,7 +24,7 @@ class AnimalCard extends StatelessWidget {
           icon: const Icon(Icons.delete),
           onPressed: onDelete,
         ),
-        onTap: onTap, // Adicionando o onTap aqui
+        onTap: onTap,
       ),
     );
   }

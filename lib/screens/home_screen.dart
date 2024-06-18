@@ -33,7 +33,10 @@ class _HomeScreenState extends State<HomeScreen> {
       _animais.removeWhere((a) => a.id == animal.id);
     });
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('${animal.nomeTutor} foi removido')),
+      SnackBar(
+        content: Text('${animal.nomeTutor} foi removido'),
+        backgroundColor: Theme.of(context).colorScheme.error,
+      ),
     );
   }
 
@@ -54,33 +57,70 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animais Hospedados'),
-      ),
-      body: ListView.builder(
-        itemCount: _animais.length,
-        itemBuilder: (context, index) {
-          final animal = _animais[index];
-          return Dismissible(
-            key: Key(animal.id),
-            background: Container(
-              color: Colors.red,
-              alignment: Alignment.centerRight,
-              padding: const EdgeInsets.only(right: 20.0),
-              child: const Icon(
-                Icons.delete,
-                color: Colors.white,
-              ),
-            ),
-            onDismissed: (direction) {
-              _excluirAnimal(animal);
+        title: const Text(
+          'Animais Hospedados',
+          style: TextStyle(
+            fontFamily: 'Roboto',
+            fontWeight: FontWeight.bold,
+            fontSize: 22.0,
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 48, 39, 176),
+        centerTitle: true,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+          ),
+        ),
+
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              // ação para a pesquisa
             },
-            child: AnimalCard(
-              animal: animal,
-              onDelete: () => _excluirAnimal(animal),
-              onTap: () => _navegarParaFormulario(animal),
-            ),
-          );
-        },
+          ),
+        ],
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: _animais.isEmpty
+            ? Center(
+                child: Text(
+                  'Nenhum animal hospedado.',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+              )
+            : ListView.builder(
+                itemCount: _animais.length,
+                itemBuilder: (context, index) {
+                  final animal = _animais[index];
+                  return Dismissible(
+                    key: Key(animal.id),
+                    background: Container(
+                      color: Theme.of(context).colorScheme.error,
+                      alignment: Alignment.centerRight,
+                      padding: const EdgeInsets.only(right: 20.0),
+                      child: const Icon(
+                        Icons.delete,
+                        color: Colors.white,
+                      ),
+                    ),
+                    onDismissed: (direction) {
+                      _excluirAnimal(animal);
+                    },
+                    child: AnimalCard(
+                      animal: animal,
+                      onDelete: () => _excluirAnimal(animal),
+                      onTap: () => _navegarParaFormulario(animal),
+                    ),
+                  );
+                },
+              ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => _navegarParaFormulario(),
