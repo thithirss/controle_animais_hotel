@@ -43,15 +43,24 @@ widgets/animal_card.dart -> O widget que apresenta os forms apos o submit.
 
 Ao iniciar o main.dart, apos a depuração do flutter vamos nos deparar com a tela inicial:
 
-<img src="https://github.com/thithirss/controle_animais_hotel/assets/92064189/59c73816-2fa1-449e-ba64-a7490f4b3b49" alt="Descrição da Imagem" width="300">
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/8b52ee22-f910-46fe-9850-8a1382ec50e0" width = "300">
+
 
 Ao clicar no simbolo de "+" no canto inferior esquerdo, podemos fazer o cadastro dos animais.
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/e51fbc3a-30d7-417c-8afc-8d37cbbed8dc" width = "300">
 
-<img src ="https://github.com/thithirss/controle_animais_hotel/assets/92064189/6f9717d4-b6a0-4c6d-90cb-a99b5dc33cc0" width="300">
 
 onde será preenchido as informações para o cadastro do pet ao Hotel
 
-<img src ="https://github.com/thithirss/controle_animais_hotel/assets/92064189/d0c2156b-ec0d-4dbe-ad15-cf1a660dcc51" width="300">
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/d19e4737-0302-41ee-b78d-d5d7a7fa25c4" width= "300">
+
+É possivel diferenciar os animais pela especie (gato ou cachorro)
+
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/e0aa5753-a003-4062-8306-436e98dbaa10" width = "300">
+
+Para facilitar ao usuario, o cadastro de datas é feito via pop-up de um calendario 
+
+<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/1908086d-3f9f-4849-918d-e1e6e2226d64" width = "300">
 
 Apos preenchido, podera ser salvo e sera apresentado na tela inicial
 
