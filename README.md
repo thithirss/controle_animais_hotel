@@ -65,11 +65,7 @@ Para facilitar ao usuario, o cadastro de datas é feito via pop-up de um calenda
 
 <img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/1908086d-3f9f-4849-918d-e1e6e2226d64" width = "300">
 
-Apos preenchido, podera ser salvo e sera apresentado na tela inicial
-
-<img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/47ae24ad-2f02-4f75-8099-d44709a7b365" width = "300">
-
-Clicando em cima do cadastro é possivel ser feita a edição do mesmo, ou excluir o cadastro do pet.
+Apos preenchido, podera ser salvo e sera apresentado na tela inicial, clicando em cima do cadastro é possivel ser feita a edição do mesmo, ou excluir o cadastro do pet.
 
 <img src = "https://github.com/thithirss/controle_animais_hotel/assets/92064189/a4565e51-6ba1-4aaa-9073-32e87d545d07" width = "300">
 
