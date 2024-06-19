@@ -33,10 +33,10 @@ controle_animais_hotel/ <br />
 ├── pubspec.yaml <br />
 └── README.md <br />
 
-models/animal.dart -> as classes, construtores e metodos.
-screens/home_screen.dart -> a tela inicial da aplicação, contendo os PET's cadastrados no hotel
-screens/animal_form_creen.dart ->  O formulario de cadastro onde é inseridas as informações necessarias para compor o form
-widgets/animal_card.dart -> O widget que apresenta os forms apos o submit.
+models/animal.dart -> as classes, construtores e metodos. <br>
+screens/home_screen.dart -> a tela inicial da aplicação, contendo os PET's cadastrados no hotel <br>
+screens/animal_form_creen.dart ->  O formulario de cadastro onde é inseridas as informações necessarias para compor o form <br>
+widgets/animal_card.dart -> O widget que apresenta os forms apos o submit.<br>
 
 
 ## Apresentação da aplicação:
@@ -76,4 +76,4 @@ Apos preenchido, podera ser salvo e sera apresentado na tela inicial, clicando e
 
 ## Considerações
 
-Pojeito feito e desenvolvido por Thiago Vicente
+Pojeito feito e desenvolvido por Thiago Vicente, espero que gostem e desde já agradeço a oportunidade!
