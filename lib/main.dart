@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   ThemeData _buildTheme() {
     final ThemeData base = ThemeData.light();
     return base.copyWith(
-      primaryColor: const Color.fromARGB(255, 48, 39, 176),
+      primaryColor: Color.fromARGB(255, 42, 42, 49),
       colorScheme: base.colorScheme.copyWith(
         secondary: Colors.orange,
       ),
@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
       textTheme: _buildTextTheme(base.textTheme),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color.fromARGB(255, 48, 39, 176), // Background color
-          foregroundColor: Color.fromARGB(255, 255, 255, 255), // Text color
+          backgroundColor: Color.fromARGB(255, 78, 185, 6), 
+          foregroundColor: Color.fromARGB(255, 255, 255, 255),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
       displayLarge: base.displayLarge?.copyWith(
         fontWeight: FontWeight.bold,
         fontSize: 24.0,
-        color: const Color.fromARGB(255, 48, 39, 176),
+        color: Color.fromARGB(255, 78, 185, 6),
       ),
       bodyLarge: base.bodyLarge?.copyWith(
         fontSize: 16.0,
@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
       ),
       bodyMedium: base.bodyMedium?.copyWith(
         fontSize: 14.0,
-        color: Colors.black54,
+        color: const Color.fromARGB(137, 255, 255, 255),
       ),
     );
   }

@@ -65,21 +65,12 @@ class _HomeScreenState extends State<HomeScreen> {
             fontSize: 22.0,
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 48, 39, 176),
+        backgroundColor: Color.fromARGB(255, 78, 185, 6),
         centerTitle: true,
         flexibleSpace: Container(
           decoration: BoxDecoration(
           ),
         ),
-
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              // ação para a pesquisa
-            },
-          ),
-        ],
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             bottom: Radius.circular(20),
@@ -94,6 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Nenhum animal hospedado.',
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
+                
               )
             : ListView.builder(
                 itemCount: _animais.length,
@@ -107,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: const EdgeInsets.only(right: 20.0),
                       child: const Icon(
                         Icons.delete,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 255, 255, 255),
                       ),
                     ),
                     onDismissed: (direction) {

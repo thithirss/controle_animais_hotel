@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:controle_animais_hotel/models/animal.dart';
 import 'package:intl/intl.dart';
 
-
 class AnimalFormScreen extends StatefulWidget {
   final Function(Animal) adicionarAnimal;
   final Function(Animal) editarAnimal;
@@ -63,22 +62,6 @@ class _AnimalFormScreenState extends State<AnimalFormScreen> {
     }
   }
 
-  // Future<void> _selectDate(BuildContext context, TextEditingController controller, DateTime? initialDate, Function(DateTime?) onDateSelected) async {
-  //   final DateTime? picked = await showDatePicker(
-  //     context: context,
-  //     initialDate: initialDate ?? DateTime.now(),
-  //     firstDate: DateTime(2000),
-  //     lastDate: DateTime(2101),
-  //   );
-  //   if (picked != null) {
-  //     setState(() {
-  //       onDateSelected(picked);
-  //       controller.text = picked.toLocal().toString().split(' ')[0];
-  //     });
-  //   }
-  // }
-
-
    Future<void> _selectDate(BuildContext context, TextEditingController controller, DateTime? initialDate, Function(DateTime?) onDateSelected) async {
     final DateTime? picked = await showDatePicker(
       context: context,
@@ -88,8 +71,8 @@ class _AnimalFormScreenState extends State<AnimalFormScreen> {
       builder: (BuildContext context, Widget? child) {
         return Theme(
           data: ThemeData.light().copyWith(
-            primaryColor: Color.fromARGB(255, 48, 39, 176),
-            colorScheme: ColorScheme.light(primary: Color.fromARGB(255, 48, 39, 176)),
+            primaryColor: Color.fromARGB(255, 78, 185, 6),
+            colorScheme: ColorScheme.light(primary: Color.fromARGB(255, 78, 185, 6)),
             buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
           ),
           child: child!,
@@ -112,7 +95,7 @@ class _AnimalFormScreenState extends State<AnimalFormScreen> {
           widget.animal == null ? 'Adicionar Animal' : 'Editar Animal',
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: const Color.fromARGB(255, 48, 39, 176),
+        backgroundColor: Color.fromARGB(255, 78, 185, 6),
         centerTitle: true,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
